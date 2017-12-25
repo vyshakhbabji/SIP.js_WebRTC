@@ -38,7 +38,7 @@ function createSimple(callerURI, displayName, remoteVideo, buttonId, sip_passwor
     var configuration = {
         media: {
             remote: {
-                video: remoteVideoElement,
+//                 video: remoteVideoElement,
                 audio: remoteVideoElement
             }
         },
@@ -52,7 +52,7 @@ function createSimple(callerURI, displayName, remoteVideo, buttonId, sip_passwor
             rel100:SIP.C.supported.SUPPORTED,
             registerExpires: null,
             noAnswerTimeout: null,
-            traceSip: false,
+            traceSip: true,
             stunServers: null,
             turnServers: null,
             usePreloadedRoute: null,
